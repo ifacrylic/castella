@@ -1,18 +1,12 @@
+/* Credit to codeberg.org/thatonecalculator/calckey/src/branch/develop/packages/client/src/components/global/MkLoading.vue (commit: 5b67390baf) */
 <template>
-<div :class="[$style.root, { [$style.inline]: inline, [$style.colored]: colored, [$style.mini]: mini, [$style.em]: em }]">
-	<div :class="$style.container">
-		<svg :class="[$style.spinner, $style.bg]" viewBox="0 0 168 168" xmlns="http://www.w3.org/2000/svg">
-			<g transform="matrix(1.125,0,0,1.125,12,12)">
-				<circle cx="64" cy="64" r="64" style="fill:none;stroke:currentColor;stroke-width:21.33px;"/>
-			</g>
-		</svg>
-		<svg :class="[$style.spinner, $style.fg]" viewBox="0 0 168 168" xmlns="http://www.w3.org/2000/svg">
-			<g transform="matrix(1.125,0,0,1.125,12,12)">
-				<path d="M128,64C128,28.654 99.346,0 64,0C99.346,0 128,28.654 128,64Z" style="fill:none;stroke:currentColor;stroke-width:21.33px;"/>
-			</g>
-		</svg>
+	<div :class="[$style.root, { [$style.inline]: inline, [$style.colored]: colored, [$style.mini]: mini }]">
+		<div :class="$style.container" aria-hidden="true">
+			<svg :class="[$style.spinner]" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+				<circle :class="[$style.path]" cx="25" cy="25" r="20" fill="none" stroke-width="6px" style="fill:none;stroke:currentColor;stroke-width:6px;"></circle>
+			</svg>
+		</div>
 	</div>
-</div>
 </template>
 
 <script lang="ts" setup>
@@ -22,17 +16,17 @@ const props = withDefaults(defineProps<{
 	inline?: boolean;
 	colored?: boolean;
 	mini?: boolean;
-	em?: boolean;
 }>(), {
 	inline: false,
 	colored: true,
 	mini: false,
-	em: false,
 });
 </script>
 
 <style lang="scss" module>
-@keyframes spinner {
+/* Credit to https://codepen.io/supah/pen/BjYLdW */
+
+@keyframes spin {
 	0% {
 		transform: rotate(0deg);
 	}
@@ -41,12 +35,27 @@ const props = withDefaults(defineProps<{
 	}
 }
 
+@keyframes dash {
+	0% {
+		stroke-dasharray: 1, 150;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 90, 150;
+		stroke-dashoffset: -35;
+	}
+	100% {
+		stroke-dasharray: 90, 150;
+		stroke-dashoffset: -124;
+	}
+}
+
 .root {
 	padding: 32px;
 	text-align: center;
 	cursor: wait;
 
-	--size: 38px;
+	--size: 40px;
 
 	&.colored {
 		color: var(--accent);
@@ -62,13 +71,6 @@ const props = withDefaults(defineProps<{
 		padding: 16px;
 		--size: 32px;
 	}
-
-	&.em {
-		display: inline-block;
-		vertical-align: middle;
-		padding: 0;
-		--size: 1em;
-	}
 }
 
 .container {
@@ -82,20 +84,16 @@ const props = withDefaults(defineProps<{
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 999;
 	width: var(--size);
 	height: var(--size);
-	fill-rule: evenodd;
-	clip-rule: evenodd;
+	animation: spin 2s linear infinite;
+}
+
+.path {
+	stroke: var(--accent);
 	stroke-linecap: round;
-	stroke-linejoin: round;
-	stroke-miterlimit: 1.5;
+	animation: dash 1.2s ease-in-out infinite;
 }
 
-.bg {
-	opacity: 0.275;
-}
-
-.fg {
-	animation: spinner 0.5s linear infinite;
-}
 </style>
