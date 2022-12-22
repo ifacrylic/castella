@@ -186,7 +186,7 @@
 
 		body,
 		html {
-			background-color: #222;
+			background-color: #1c1c25;
 			color: #dfddcc;
 			justify-content: center;
 			margin: auto;
@@ -203,32 +203,32 @@
 		}
 
 		.button-big {
-			background: linear-gradient(90deg, rgb(134, 179, 0), rgb(74, 179, 0));
+			background: linear-gradient(90deg, rgb(255, 89, 117), rgb(255, 116, 89));
 			line-height: 50px;
 		}
 
 		.button-big:hover {
-			background: rgb(153, 204, 0);
+			background: rgb(255, 140, 159);
 		}
 
 		.button-small {
-			background: #444;
+			background: rgb(35, 35, 47);
 			line-height: 40px;
 		}
 
 		.button-small:hover {
-			background: #555;
+			background: rgba(255, 89, 117, 0.15);
 		}
 
 		.button-label-big {
-			color: #222;
+			color: #ffffff;
 			font-weight: bold;
 			font-size: 20px;
 			padding: 12px;
 		}
 
 		.button-label-small {
-			color: rgb(153, 204, 0);
+			color: rgb(255, 89, 117);
 			font-size: 16px;
 			padding: 12px;
 		}

@@ -30,7 +30,7 @@
 				</I18n>
 			</div>
 		</div>
-		<img src="/client-assets/misskey.svg" class="misskey"/>
+		<img src="/client-assets/castella.svg" class="misskey"/>
 	</div>
 </div>
 </template>

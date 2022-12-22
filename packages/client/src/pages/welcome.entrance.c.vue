@@ -4,14 +4,14 @@
 		<MkFeaturedPhotos class="bg"/>
 		<div class="fade"></div>
 		<div class="emojis">
-			<MkEmoji :normal="true" :no-style="true" emoji="👍"/>
+			<MkEmoji :normal="true" :no-style="true" emoji="🍮"/>
 			<MkEmoji :normal="true" :no-style="true" emoji="❤"/>
-			<MkEmoji :normal="true" :no-style="true" emoji="😆"/>
+			<MkEmoji :normal="true" :no-style="true" emoji="🍮"/>
 			<MkEmoji :normal="true" :no-style="true" emoji="🎉"/>
 			<MkEmoji :normal="true" :no-style="true" emoji="🍮"/>
 		</div>
 		<div class="main">
-			<img src="/client-assets/misskey.svg" class="misskey"/>
+			<img src="/client-assets/castella.svg" class="misskey"/>
 			<div class="form _panel">
 				<div class="bg">
 					<div class="fade"></div>
