@@ -998,6 +998,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/jetbrains-mono@npm:^4.5.11":
+  version: 4.5.11
+  resolution: "@fontsource/jetbrains-mono@npm:4.5.11"
+  checksum: 2f794029028287093b1b6499d8d04058d70a832932631e27ede235fcba025c42099515dbd46d483eb376cf3c27c604d0104c092dc73505f769bef201ffe17c7b
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -3260,6 +3267,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@yarnpkg/cli-dist@npm:^3.3.0":
+  version: 3.3.1
+  resolution: "@yarnpkg/cli-dist@npm:3.3.1"
+  bin:
+    yarn: bin/yarn.js
+    yarnpkg: bin/yarn.js
+  checksum: b3a7063aa784a9ce721346ff05b7b37b3e2a8f17cf47f8302582faa0bea08b6db335b34e08631a58276e757e05294feb56263b2eb4e9435aa5af4322a0a4a727
+  languageName: node
+  linkType: hard
+
 "abab@npm:^2.0.6":
   version: 2.0.6
   resolution: "abab@npm:2.0.6"
@@ -5135,6 +5152,7 @@ __metadata:
   resolution: "client@workspace:packages/client"
   dependencies:
     "@discordapp/twemoji": 14.0.2
+    "@fontsource/jetbrains-mono": ^4.5.11
     "@rollup/plugin-alias": 4.0.2
     "@rollup/plugin-json": 6.0.0
     "@rollup/pluginutils": 5.0.2
@@ -5185,6 +5203,8 @@ __metadata:
     mfm-js: 0.23.0
     misskey-js: 0.0.14
     photoswipe: 5.3.4
+    pretendard: ^1.3.6
+    pretendard-jp: ^1.3.6
     prismjs: 1.29.0
     punycode: 2.1.1
     querystring: 0.2.1
@@ -11822,6 +11842,7 @@ __metadata:
     "@types/gulp-rename": 2.0.1
     "@typescript-eslint/eslint-plugin": 5.46.1
     "@typescript-eslint/parser": 5.46.1
+    "@yarnpkg/cli-dist": ^3.3.0
     cross-env: 7.0.3
     cypress: 12.1.0
     eslint: ^8.30.0
@@ -13692,6 +13713,20 @@ __metadata:
   version: 1.0.4
   resolution: "prepend-http@npm:1.0.4"
   checksum: 01e7baf4ad38af02257b99098543469332fc42ae50df33d97a124bf8172295907352fa6138c9b1610c10c6dd0847ca736e53fda736387cc5cf8fcffe96b47f29
+  languageName: node
+  linkType: hard
+
+"pretendard-jp@npm:^1.3.6":
+  version: 1.3.6
+  resolution: "pretendard-jp@npm:1.3.6"
+  checksum: d7531fe082ccb773ff004cf74d92c1e86aeb0aec3843ed1e21067dfaffbb38e29f6e0b4d0bbac15736323d36a8b542d5f997fe15cc3f5ee92c81962a79ec5695
+  languageName: node
+  linkType: hard
+
+"pretendard@npm:^1.3.6":
+  version: 1.3.6
+  resolution: "pretendard@npm:1.3.6"
+  checksum: 5621dc4b62098076fe1253dba7ba13410338e992ef1d78d98c02568e755f694a50f3c98e076b1c21dc129ed3f67be83496939995d27f724814981795c529720d
   languageName: node
   linkType: hard
 
