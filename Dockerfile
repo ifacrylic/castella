@@ -1,24 +1,27 @@
-FROM node:18 AS builder
-ARG NODE_ENV=production
+FROM node:18.12.1-bullseye AS builder
 
-WORKDIR /misskey
+ARG NODE_ENV=production
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     tini build-essential ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-COPY .yarn ./.yarn
-COPY .yarnrc.yml package.json yarn.lock ./
-COPY packages/backend/package.json ./packages/backend/
-COPY packages/client/package.json ./packages/client/
-COPY packages/sw/package.json ./packages/sw/
+WORKDIR /misskey
 
-RUN corepack yarn install
-COPY . .
+COPY [".yarnrc.yml", "package.json", "yarn.lock", "./"]
+COPY [".yarn", "./.yarn"]
+COPY ["scripts", "./scripts"]
+COPY ["packages/backend/package.json", "./packages/backend/"]
+COPY ["packages/client/package.json", "./packages/client/"]
+COPY ["packages/sw/package.json", "./packages/sw/"]
+
+RUN yarn install --immutable
+
+COPY . ./
+
 RUN git submodule update --init
-RUN corepack yarn build
-RUN rm -rf .git
+RUN yarn build
 
 FROM gcr.io/distroless/nodejs18:latest AS runner
 WORKDIR /misskey
