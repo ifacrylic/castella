@@ -42,7 +42,6 @@
 		"lodash": "^4.17.21"
 	},
 	"dependencies": {
-		"@yarnpkg/cli-dist": "^3.3.0",
 		"execa": "5.1.1",
 		"gulp": "4.0.2",
 		"gulp-cssnano": "2.1.3",

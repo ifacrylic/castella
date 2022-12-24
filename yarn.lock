@@ -3267,16 +3267,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/cli-dist@npm:^3.3.0":
-  version: 3.3.1
-  resolution: "@yarnpkg/cli-dist@npm:3.3.1"
-  bin:
-    yarn: bin/yarn.js
-    yarnpkg: bin/yarn.js
-  checksum: b3a7063aa784a9ce721346ff05b7b37b3e2a8f17cf47f8302582faa0bea08b6db335b34e08631a58276e757e05294feb56263b2eb4e9435aa5af4322a0a4a727
-  languageName: node
-  linkType: hard
-
 "abab@npm:^2.0.6":
   version: 2.0.6
   resolution: "abab@npm:2.0.6"
@@ -11842,7 +11832,6 @@ __metadata:
     "@types/gulp-rename": 2.0.1
     "@typescript-eslint/eslint-plugin": 5.46.1
     "@typescript-eslint/parser": 5.46.1
-    "@yarnpkg/cli-dist": ^3.3.0
     cross-env: 7.0.3
     cypress: 12.1.0
     eslint: ^8.30.0

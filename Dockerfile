@@ -53,8 +53,7 @@ COPY packages/backend/migration ./packages/backend/migration
 
 RUN ln -s /bin/env /usr/bin/env
 RUN ln -s /nodejs/bin/node /usr/bin/node
-RUN ln -s ./node_modules/@yarnpkg/cli-dist/bin/yarn.js ./yarn.js
 
 ENV NODE_ENV=production
 ENTRYPOINT ["/usr/bin/tini", "--"]
-CMD ["node", "yarn.js", "run", "migrateandstart"]
+CMD ["node", ".yarn/releases/yarn-3.3.0.cjs", "run", "migrateandstart"]
