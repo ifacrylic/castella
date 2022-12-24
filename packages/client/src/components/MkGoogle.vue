@@ -15,7 +15,7 @@ const props = defineProps<{
 const query = ref(props.q);
 
 const search = () => {
-	window.open(`https://www.google.com/search?q=${query.value}`, '_blank');
+	window.open(`https://www.startpage.com/do/search?query=${query.value}`, '_blank');
 };
 </script>
 

@@ -368,7 +368,7 @@ export class MfmService {
 	
 			search: (node) => {
 				const a = doc.createElement('a');
-				a.href = `https://www.google.com/search?q=${node.props.query}`;
+				a.href = `https://www.startpage.com/do/search?query=${node.props.query}`;
 				a.textContent = node.props.content;
 				return a;
 			},
