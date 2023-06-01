@@ -4,7 +4,7 @@
 		:r="r"
 		cx="50%" cy="50%"
 		fill="none"
-		stroke-width="0.1"
+		stroke-width="0.2"
 		stroke="rgba(0, 0, 0, 0.05)"
 		:class="$style.circle"
 	/>
@@ -14,11 +14,10 @@
 		:stroke-dasharray="Math.PI * (r * 2)"
 		:stroke-dashoffset="strokeDashoffset"
 		fill="none"
-		stroke-width="0.1"
+		stroke-width="0.2"
 		:class="$style.circle"
 		:stroke="color"
 	/>
-	<text x="50%" y="50%" dy="0.05" text-anchor="middle" :class="$style.text">{{ (value * 100).toFixed(0) }}%</text>
 </svg>
 </template>
 
@@ -29,7 +28,7 @@ const props = defineProps<{
 	value: number;
 }>();
 
-const r = 0.45;
+const r = 0.35;
 
 const color = $computed(() => `hsl(${180 - (props.value * 180)}, 80%, 70%)`);
 const strokeDashoffset = $computed(() => (1 - props.value) * (Math.PI * (r * 2)));
@@ -46,10 +45,5 @@ const strokeDashoffset = $computed(() => (1 - props.value) * (Math.PI * (r * 2))
 	transform: rotate(-90deg);
 	transition: stroke-dashoffset 0.5s ease;
 	stroke-linecap: round;
-}
-
-.text {
-	font-size: 0.15px;
-	fill: currentColor;
 }
 </style>
