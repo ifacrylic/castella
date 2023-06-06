@@ -3,7 +3,7 @@
 	<template #header><MkPageHeader :actions="headerActions" :tabs="headerTabs"/></template>
 	<MKSpacer v-if="!(typeof error === 'undefined')" :contentMax="1200">
 		<div :class="$style.root">
-			<img :class="$style.img" src="https://xn--931a.moe/assets/error.jpg" class="_ghost"/>
+			<img :class="$style.img" src="https://cdn.stella.place/assets/Error.png" class="_ghost"/>
 			<p :class="$style.text">
 				<i class="ti ti-alert-triangle"></i>
 				{{ i18n.ts.nothing }}

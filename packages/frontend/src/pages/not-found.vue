@@ -1,7 +1,7 @@
 <template>
 <div>
 	<div class="_fullinfo">
-		<img src="https://xn--931a.moe/assets/not-found.jpg" class="_ghost"/>
+		<img src="https://cdn.stella.place/assets/Not-found.png" class="_ghost"/>
 		<div>{{ i18n.ts.notFoundDescription }}</div>
 	</div>
 </div>

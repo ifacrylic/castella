@@ -2,7 +2,7 @@
 <MkLoading v-if="!loaded"/>
 <Transition :name="defaultStore.state.animation ? '_transition_zoom' : ''" appear>
 	<div v-show="loaded" :class="$style.root">
-		<img src="https://xn--931a.moe/assets/error.jpg" class="_ghost" :class="$style.img"/>
+		<img src="https://cdn.stella.place/assets/Error.png" class="_ghost" :class="$style.img"/>
 		<div class="_gaps">
 			<p><b><i class="ti ti-alert-triangle"></i> {{ i18n.ts.pageLoadError }}</b></p>
 			<p v-if="meta && (version === meta.version)">{{ i18n.ts.pageLoadErrorDescription }}</p>
