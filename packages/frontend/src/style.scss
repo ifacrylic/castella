@@ -1,13 +1,27 @@
 @charset "utf-8";
 
-@import "@fontsource/jetbrains-mono/variable.css";
-@import "@fontsource/jetbrains-mono/variable-italic.css";
-@import "pretendard/dist/web/variable/PretendardVariable-VF.css";
-@import "pretendard-jp/dist/web/variable/PretendardJPVariable-VF.css";
+@import "@fontsource/jetbrains-mono/100.css";
+@import "@fontsource/jetbrains-mono/100-italic.css";
+@import "@fontsource/jetbrains-mono/200.css";
+@import "@fontsource/jetbrains-mono/200-italic.css";
+@import "@fontsource/jetbrains-mono/300.css";
+@import "@fontsource/jetbrains-mono/300-italic.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/400-italic.css";
+@import "@fontsource/jetbrains-mono/500.css";
+@import "@fontsource/jetbrains-mono/500-italic.css";
+@import "@fontsource/jetbrains-mono/600.css";
+@import "@fontsource/jetbrains-mono/600-italic.css";
+@import "@fontsource/jetbrains-mono/700.css";
+@import "@fontsource/jetbrains-mono/700-italic.css";
+@import "@fontsource/jetbrains-mono/800.css";
+@import "@fontsource/jetbrains-mono/800-italic.css";
+@import "pretendard/dist/web/static/pretendard-dynamic-subset.css";
+@import "pretendard-jp/dist/web/static/pretendard-jp-dynamic-subset.css";
 
-$default-font: "Pretendard JP Variable", "Pretendard JP", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo, "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+$default-font: "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo, "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 $system-font: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-$monospace-font: "JetBrains MonoVariable", "JetBrains Mono", "Pretendard JP Variable", "Pretendard JP", "Pretendard Variable", Pretendard, Fira code, Fira Mono, Consolas, Menlo, Courier, monospace !important;
+$monospace-font: "JetBrains Mono", "Pretendard JP", Pretendard, Fira code, Fira Mono, Consolas, Menlo, Courier, monospace !important;
 
 :root {
 	--radius: 12px;
