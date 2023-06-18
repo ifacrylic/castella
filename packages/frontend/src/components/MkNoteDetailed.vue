@@ -117,6 +117,10 @@
 			<button v-if="appearNote.myReaction != null" ref="reactButton" class="_button" :class="[$style.noteFooterButton, $style.reacted]" @click="undoReact(appearNote)">
 				<i class="ti ti-minus"></i>
 			</button>
+			<button v-if="instance.translatorAvailable && appearNote.text != ''" class="_button" :class="$style.noteFooterButton" @mousedown="translation ? translation = null : translate()">
+				<i v-if="!translation" class="ti ti-language-hiragana"></i>
+				<i v-else class="ti ti-note-off"></i>
+			</button>
 			<button v-if="defaultStore.state.showClipButtonInNoteFooter" ref="clipButton" class="_button" :class="$style.noteFooterButton" @mousedown="clip()">
 				<i class="ti ti-paperclip"></i>
 			</button>
@@ -169,6 +173,8 @@ import { claimAchievement } from '@/scripts/achievements';
 import { MenuItem } from '@/types/menu';
 import MkRippleEffect from '@/components/MkRippleEffect.vue';
 import { showMovedDialog } from '@/scripts/show-moved-dialog';
+import { miLocalStorage } from '@/local-storage';
+import { instance } from '@/instance';
 
 const props = defineProps<{
 	note: misskey.entities.Note;
@@ -368,6 +374,17 @@ function undoReact(note): void {
 	os.api('notes/reactions/delete', {
 		noteId: note.id,
 	});
+}
+
+async function translate(): Promise<void> {
+	if (translation.value != null) return;
+	translating.value = true;
+	const res = await os.api('notes/translate', {
+		noteId: appearNote.id,
+		targetLang: miLocalStorage.getItem('lang') ?? navigator.language,
+	});
+	translating.value = false;
+	translation.value = res;
 }
 
 function onContextmenu(ev: MouseEvent): void {
