@@ -1012,6 +1012,7 @@ export interface Locale {
     "retryAllQueuesConfirmText": string;
     "enableChartsForRemoteUser": string;
     "enableChartsForFederatedInstances": string;
+    "showTranslateButtonInNoteFooter": string;
     "showClipButtonInNoteFooter": string;
     "largeNoteReactions": string;
     "noteIdOrUrl": string;

@@ -34,6 +34,7 @@
 		<div class="_gaps_m">
 			<div class="_gaps_s">
 				<MkSwitch v-model="showNoteActionsOnlyHover">{{ i18n.ts.showNoteActionsOnlyHover }}</MkSwitch>
+				<MkSwitch v-model="showTranslateButtonInNoteFooter">{{ i18n.ts.showTranslateButtonInNoteFooter }}</MkSwitch>
 				<MkSwitch v-model="showClipButtonInNoteFooter">{{ i18n.ts.showClipButtonInNoteFooter }}</MkSwitch>
 				<MkSwitch v-model="largeNoteReactions">{{ i18n.ts.largeNoteReactions }}</MkSwitch>
 				<MkSwitch v-model="collapseRenotes">{{ i18n.ts.collapseRenotes }}</MkSwitch>
@@ -201,6 +202,7 @@ async function reloadAsk() {
 const overridedDeviceKind = computed(defaultStore.makeGetterSetter('overridedDeviceKind'));
 const serverDisconnectedBehavior = computed(defaultStore.makeGetterSetter('serverDisconnectedBehavior'));
 const showNoteActionsOnlyHover = computed(defaultStore.makeGetterSetter('showNoteActionsOnlyHover'));
+const showTranslateButtonInNoteFooter = computed(defaultStore.makeGetterSetter('showTranslateButtonInNoteFooter'));
 const showClipButtonInNoteFooter = computed(defaultStore.makeGetterSetter('showClipButtonInNoteFooter'));
 const largeNoteReactions = computed(defaultStore.makeGetterSetter('largeNoteReactions'));
 const collapseRenotes = computed(defaultStore.makeGetterSetter('collapseRenotes'));

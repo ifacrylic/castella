@@ -117,7 +117,7 @@
 			<button v-if="appearNote.myReaction != null" ref="reactButton" class="_button" :class="[$style.noteFooterButton, $style.reacted]" @click="undoReact(appearNote)">
 				<i class="ti ti-minus"></i>
 			</button>
-			<button v-if="instance.translatorAvailable && appearNote.text != ''" class="_button" :class="$style.noteFooterButton" @mousedown="translation ? translation = null : translate()">
+			<button v-if="defaultStore.state.showTranslateButtonInNoteFooter && instance.translatorAvailable && appearNote.text != ''" class="_button" :class="$style.noteFooterButton" @mousedown="translation ? translation = null : translate()">
 				<i v-if="!translation" class="ti ti-language-hiragana"></i>
 				<i v-else class="ti ti-note-off"></i>
 			</button>
