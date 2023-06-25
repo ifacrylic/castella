@@ -36,18 +36,6 @@
 		"@tensorflow/tfjs": "4.4.0",
 		"@tensorflow/tfjs-node": "4.4.0",
 		"bufferutil": "^4.0.7",
-		"slacc-android-arm-eabi": "0.0.9",
-		"slacc-android-arm64": "0.0.9",
-		"slacc-darwin-arm64": "0.0.9",
-		"slacc-darwin-universal": "0.0.9",
-		"slacc-darwin-x64": "0.0.9",
-		"slacc-freebsd-x64": "0.0.9",
-		"slacc-linux-arm-gnueabihf": "0.0.9",
-		"slacc-linux-arm64-gnu": "0.0.9",
-		"slacc-linux-arm64-musl": "0.0.9",
-		"slacc-linux-x64-gnu": "0.0.9",
-		"slacc-win32-arm64-msvc": "0.0.9",
-		"slacc-win32-x64-msvc": "0.0.9",
 		"utf-8-validate": "^6.0.3"
 	},
 	"dependencies": {
