@@ -1,8 +1,8 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { ulid } from 'ulid';
+import { genAid, parseAid } from '@libnare/mk-square';
 import { DI } from '@/di-symbols.js';
 import type { Config } from '@/config.js';
-import { genAid, parseAid } from '@/misc/id/aid.js';
 import { genMeid, parseMeid } from '@/misc/id/meid.js';
 import { genMeidg, parseMeidg } from '@/misc/id/meidg.js';
 import { genObjectId, parseObjectId } from '@/misc/id/object-id.js';
