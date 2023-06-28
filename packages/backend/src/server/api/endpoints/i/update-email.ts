@@ -1,6 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import ms from 'ms';
 import bcrypt from 'bcryptjs';
+import { L_CHARS, secureRndstr } from '@libnare/mk-square';
 import { Endpoint } from '@/server/api/endpoint-base.js';
 import type { UsersRepository, UserProfilesRepository } from '@/models/index.js';
 import { UserEntityService } from '@/core/entities/UserEntityService.js';
@@ -8,7 +9,6 @@ import { EmailService } from '@/core/EmailService.js';
 import type { Config } from '@/config.js';
 import { DI } from '@/di-symbols.js';
 import { GlobalEventService } from '@/core/GlobalEventService.js';
-import { L_CHARS, secureRndstr } from '@/misc/secure-rndstr.js';
 import { ApiError } from '../../error.js';
 
 export const meta = {
@@ -94,7 +94,7 @@ export default class extends Endpoint<typeof meta, typeof paramDef> {
 			this.globalEventService.publishMainStream(me.id, 'meUpdated', iObj);
 
 			if (ps.email != null) {
-				const code = secureRndstr(16, { chars: L_CHARS });
+				const code = secureRndstr(16, L_CHARS);
 
 				await this.userProfilesRepository.update(me.id, {
 					emailVerifyCode: code,

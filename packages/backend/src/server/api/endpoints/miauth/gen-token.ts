@@ -1,8 +1,8 @@
 import { Inject, Injectable } from '@nestjs/common';
+import { secureRndstr } from '@libnare/mk-square';
 import { Endpoint } from '@/server/api/endpoint-base.js';
 import type { AccessTokensRepository } from '@/models/index.js';
 import { IdService } from '@/core/IdService.js';
-import { secureRndstr } from '@/misc/secure-rndstr.js';
 import { DI } from '@/di-symbols.js';
 
 export const meta = {

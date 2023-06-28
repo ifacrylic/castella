@@ -1,3 +1,3 @@
-import { secureRndstr } from '@/misc/secure-rndstr.js';
+import { secureRndstr } from '@libnare/mk-square';
 
 export default () => secureRndstr(16);

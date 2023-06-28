@@ -1,9 +1,9 @@
 import { Inject, Injectable } from '@nestjs/common';
 import bcrypt from 'bcryptjs';
+import { secureRndstr } from '@libnare/mk-square';
 import { Endpoint } from '@/server/api/endpoint-base.js';
 import type { UsersRepository, UserProfilesRepository } from '@/models/index.js';
 import { DI } from '@/di-symbols.js';
-import { secureRndstr } from '@/misc/secure-rndstr.js';
 
 export const meta = {
 	tags: ['admin'],

@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname } from 'node:path';
 import { Inject, Injectable } from '@nestjs/common';
 import rename from 'rename';
+import { correctFilename } from '@libnare/mk-square';
 import type { Config } from '@/config.js';
 import type { DriveFile, DriveFilesRepository } from '@/models/index.js';
 import { DI } from '@/di-symbols.js';
@@ -22,7 +23,6 @@ import type { FastifyInstance, FastifyRequest, FastifyReply, FastifyPluginOption
 import { isMimeImage } from '@/misc/is-mime-image.js';
 import sharp from 'sharp';
 import { sharpBmp } from 'sharp-read-bmp';
-import { correctFilename } from '@/misc/correct-filename.js';
 
 const _filename = fileURLToPath(import.meta.url);
 const _dirname = dirname(_filename);

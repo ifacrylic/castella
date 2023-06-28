@@ -33,7 +33,7 @@ export class RemoteUserResolveService {
 	}
 
 	@bindThis
-	public async resolveUser(username: string, host: string | null): Promise<LocalUser | RemoteUser> {
+	public async resolveUser(username: string, host: string | undefined): Promise<LocalUser | RemoteUser> {
 		const usernameLower = username.toLowerCase();
 	
 		if (host == null) {

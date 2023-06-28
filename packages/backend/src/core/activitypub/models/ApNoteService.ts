@@ -1,6 +1,7 @@
 import { forwardRef, Inject, Injectable } from '@nestjs/common';
 import promiseLimit from 'promise-limit';
 import { In } from 'typeorm';
+import { checkHttps } from '@libnare/mk-square';
 import { DI } from '@/di-symbols.js';
 import type { PollsRepository, EmojisRepository } from '@/models/index.js';
 import type { Config } from '@/config.js';
@@ -18,7 +19,6 @@ import { PollService } from '@/core/PollService.js';
 import { StatusError } from '@/misc/status-error.js';
 import { UtilityService } from '@/core/UtilityService.js';
 import { bindThis } from '@/decorators.js';
-import { checkHttps } from '@/misc/check-https.js';
 import { getOneApId, getApId, getOneApHrefNullable, validPost, isEmoji, getApType } from '../type.js';
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
 import { ApLoggerService } from '../ApLoggerService.js';

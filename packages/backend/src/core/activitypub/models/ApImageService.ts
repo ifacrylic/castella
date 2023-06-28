@@ -1,4 +1,5 @@
 import { Inject, Injectable } from '@nestjs/common';
+import { checkHttps } from '@libnare/mk-square';
 import { DI } from '@/di-symbols.js';
 import type { DriveFilesRepository } from '@/models/index.js';
 import type { Config } from '@/config.js';
@@ -12,7 +13,6 @@ import type Logger from '@/logger.js';
 import { bindThis } from '@/decorators.js';
 import { ApResolverService } from '../ApResolverService.js';
 import { ApLoggerService } from '../ApLoggerService.js';
-import { checkHttps } from '@/misc/check-https.js';
 
 @Injectable()
 export class ApImageService {

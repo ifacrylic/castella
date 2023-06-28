@@ -1,13 +1,13 @@
 import ms from 'ms';
 import { IsNull } from 'typeorm';
 import { Inject, Injectable } from '@nestjs/common';
+import { L_CHARS, secureRndstr } from '@libnare/mk-square';
 import type { PasswordResetRequestsRepository, UserProfilesRepository, UsersRepository } from '@/models/index.js';
 import { Endpoint } from '@/server/api/endpoint-base.js';
 import { IdService } from '@/core/IdService.js';
 import type { Config } from '@/config.js';
 import { DI } from '@/di-symbols.js';
 import { EmailService } from '@/core/EmailService.js';
-import { L_CHARS, secureRndstr } from '@/misc/secure-rndstr.js';
 
 export const meta = {
 	tags: ['reset password'],
@@ -77,7 +77,7 @@ export default class extends Endpoint<typeof meta, typeof paramDef> {
 				return;
 			}
 
-			const token = secureRndstr(64, { chars: L_CHARS });
+			const token = secureRndstr(64, L_CHARS);
 
 			await this.passwordResetRequestsRepository.insert({
 				id: this.idService.genId(),
