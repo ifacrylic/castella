@@ -117,8 +117,8 @@ importers:
         specifier: ^7.2.1
         version: 7.2.1
       '@libnare/mk-square':
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.2.0
+        version: 0.2.0
       '@nestjs/common':
         specifier: 10.0.3
         version: 10.0.3(reflect-metadata@0.1.13)(rxjs@7.8.1)
@@ -5452,8 +5452,8 @@ packages:
     resolution: {integrity: sha512-fuscdXJ9G1qb7W8VdHi+IwRqij3lBkosAm4ydQtEmbY58OzHXqQhvlxqEkoz0yssNVn38bcpRWgA9PP+OGoisw==}
     dev: false
 
-  /@libnare/mk-square-android-arm-eabi@0.1.0:
-    resolution: {integrity: sha512-BlB2TwRbOm38eAON63iwiqRqHwiktOVsbRO8vzOtKdA6UToNJ2T5wFbx+Hd0xjBt9ESI+qbN/tiBVcnD9jswsA==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-android-arm-eabi/-/@libnare/mk-square-android-arm-eabi-0.1.0.tgz}
+  /@libnare/mk-square-android-arm-eabi@0.2.0:
+    resolution: {integrity: sha512-GGxkGBgwc0DMZw1X13sjSVRNw8EN/SKLZq4Sp6k6f0jCC2eNvKPxNxA8IxjtubmZN1cuFYRwIKaQ7eZsKZWJzA==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-android-arm-eabi/-/@libnare/mk-square-android-arm-eabi-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [android]
@@ -5461,8 +5461,8 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square-android-arm64@0.1.0:
-    resolution: {integrity: sha512-cvgwf8BJRq8thYGsCH/nld9GHuqwijg8YBLVGaurW1tp6kU6zS7BqLZLpp4Cpqe44oSgRXWXjLkFcVPxr/R6UA==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-android-arm64/-/@libnare/mk-square-android-arm64-0.1.0.tgz}
+  /@libnare/mk-square-android-arm64@0.2.0:
+    resolution: {integrity: sha512-LeAe9v/KnfjjRrfUtCiZDl2vrdTbv5Ga5Qc9ay1RnsKE/aP3ukxzRRbiL5q1gvDx0405HEI7grHB5QlSMvA6QA==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-android-arm64/-/@libnare/mk-square-android-arm64-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [android]
@@ -5470,8 +5470,8 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square-darwin-arm64@0.1.0:
-    resolution: {integrity: sha512-dLrOV9ecn0ZxhpXy2iKh7wDhZC0HsNnhSpLeEFQjU5L0jiivExvM80JyUK2mZxQKlRlqAu+ny3ZXq1o1pRiWOw==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-darwin-arm64/-/@libnare/mk-square-darwin-arm64-0.1.0.tgz}
+  /@libnare/mk-square-darwin-arm64@0.2.0:
+    resolution: {integrity: sha512-V6ijMl6rKpRc9PiNKeXsuSLRn32H7Vozr3x7YmHR2naJbmOBVtArSBfstU3FJPfonc+7huKojPH7RfFcoSS19Q==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-darwin-arm64/-/@libnare/mk-square-darwin-arm64-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -5479,16 +5479,16 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square-darwin-universal@0.1.0:
-    resolution: {integrity: sha512-13zaCsEgDjHhFCBA/18GkYaDvJqgpJTOSKA0rMfhBhdPPEePATsi1LioqeexYkxngheBRKrwXKrDBFD+zJs0ZQ==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-darwin-universal/-/@libnare/mk-square-darwin-universal-0.1.0.tgz}
+  /@libnare/mk-square-darwin-universal@0.2.0:
+    resolution: {integrity: sha512-CwHmFxE22ZLV2/FJx89SDxDWYUI60tgunB9R+ofpqwXBbTUhFiBaAe0345VviXmzFerV8lbisVy245PSzrJg5w==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-darwin-universal/-/@libnare/mk-square-darwin-universal-0.2.0.tgz}
     engines: {node: '>= 10'}
     os: [darwin]
     requiresBuild: true
     dev: false
     optional: true
 
-  /@libnare/mk-square-darwin-x64@0.1.0:
-    resolution: {integrity: sha512-cMr0OcvvzRY+1vTtma1Y7nc+Yh/wZsEnjgHoKJ28vZW9ockIDfOeTaTBZ3FSWelxeYQn6NkWUM/LTy2KdFAhZA==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-darwin-x64/-/@libnare/mk-square-darwin-x64-0.1.0.tgz}
+  /@libnare/mk-square-darwin-x64@0.2.0:
+    resolution: {integrity: sha512-D4hrf8Tc0GnRPX/ZZelu7i9uLUP1x3eaoFYJCC1i0A+R/cFDPGTjFIT5RMRDEPgClIKM4NU0LMhbcVmzLFkHdg==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-darwin-x64/-/@libnare/mk-square-darwin-x64-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -5496,8 +5496,8 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square-freebsd-x64@0.1.0:
-    resolution: {integrity: sha512-ydw+eg1EGz/o6I7qAMWDna1ghXfKwe/YiOsugMJh9c2havsOtUnfYVOGnXESlhdtDjh79f/ewfZjcgM2z0wWHA==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-freebsd-x64/-/@libnare/mk-square-freebsd-x64-0.1.0.tgz}
+  /@libnare/mk-square-freebsd-x64@0.2.0:
+    resolution: {integrity: sha512-1hwBRJ3TIveoqmpFnipnO6KHtNsIaeJypdCi6Xd1gjO7L73d7BTX4YeexeTQBCTrjU1YhRLqigVqMZiX0aHR4A==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-freebsd-x64/-/@libnare/mk-square-freebsd-x64-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [freebsd]
@@ -5505,8 +5505,8 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square-linux-arm-gnueabihf@0.1.0:
-    resolution: {integrity: sha512-syFzuduLRNyhX0PqaS27I3Rv1tCBUkVuh/z0PiajMtYtBrqmmWfaRq/h9GWBgzuSWwGZdqQggWCYC8ISJMQoJg==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-linux-arm-gnueabihf/-/@libnare/mk-square-linux-arm-gnueabihf-0.1.0.tgz}
+  /@libnare/mk-square-linux-arm-gnueabihf@0.2.0:
+    resolution: {integrity: sha512-ogwuL0mmGHG2f1at0m11w/jgiI/B91WUBmY2NjWmw/kzirsfc5lDaievX/VdsIj06bOgOHopLfMz9yNNPubu9g==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-linux-arm-gnueabihf/-/@libnare/mk-square-linux-arm-gnueabihf-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [linux]
@@ -5514,8 +5514,8 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square-linux-arm64-gnu@0.1.0:
-    resolution: {integrity: sha512-y4yrF2ooQcolRAdhfsuHkwDanw0/S/CRMKiuJA4qRMbSBP285ldQfHc78mn2IAZMJpBXEd954x81NzDPi7cQVQ==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-linux-arm64-gnu/-/@libnare/mk-square-linux-arm64-gnu-0.1.0.tgz}
+  /@libnare/mk-square-linux-arm64-gnu@0.2.0:
+    resolution: {integrity: sha512-zuiP0WSBxWCn4XMXcaneeJAWM7Pokf8QJuP5ibN7dO6pH4Au53/Yg3ttfb3YS3VC0aLBx2lpVhXaHZSuhh0/tA==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-linux-arm64-gnu/-/@libnare/mk-square-linux-arm64-gnu-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -5524,8 +5524,8 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square-linux-arm64-musl@0.1.0:
-    resolution: {integrity: sha512-KcC86XnpebWBJSfhHDS8aayyrRDlEm8cYbuUmNExlenXTersEKJmB6qJgF5AeiGfRjP1AV/jA8amiJp4Q+M7LA==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-linux-arm64-musl/-/@libnare/mk-square-linux-arm64-musl-0.1.0.tgz}
+  /@libnare/mk-square-linux-arm64-musl@0.2.0:
+    resolution: {integrity: sha512-LRigUsWVHwJl+725TbMO7TVVIjsyFVcR+AdcP9AlUvjL+B8iZvsNTitcRzEcwxdZJMNd3mbUfaNjxfmaT/xeqg==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-linux-arm64-musl/-/@libnare/mk-square-linux-arm64-musl-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -5534,8 +5534,8 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square-linux-x64-gnu@0.1.0:
-    resolution: {integrity: sha512-+5w1ZRW9KbOokg++JNqFkV/DOwREuNsmRc/+AIUPhtvTZUeTnfN+me9YFNRjF4R80+CzBZVR57ECBmlVho184A==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-linux-x64-gnu/-/@libnare/mk-square-linux-x64-gnu-0.1.0.tgz}
+  /@libnare/mk-square-linux-x64-gnu@0.2.0:
+    resolution: {integrity: sha512-pZcqzSXnOYr8uG5A5mivIVz8OP5qQrz96vAliaS925sisHSC1BkS9spe8TxQTzIvAE4q3D9ogUXGKd0BJQjbGQ==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-linux-x64-gnu/-/@libnare/mk-square-linux-x64-gnu-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -5544,8 +5544,8 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square-linux-x64-musl@0.1.0:
-    resolution: {integrity: sha512-gK1JJdzwB/J998HkIcXJaUTc6wG9obGzcOyONVJt1tKft3JCkQ1uRSehYNluJXRpHEBgU+iVN7/dYwUEkU5rvA==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-linux-x64-musl/-/@libnare/mk-square-linux-x64-musl-0.1.0.tgz}
+  /@libnare/mk-square-linux-x64-musl@0.2.0:
+    resolution: {integrity: sha512-WGD/YQttYHkKfpf7kW73pgf7OUNIE/A1pgZEtWaP/VJ92z6P+C+JgVeAv6fsvusWQ9EwQjHWlLCcuXxmKggu2A==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-linux-x64-musl/-/@libnare/mk-square-linux-x64-musl-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -5554,8 +5554,8 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square-win32-arm64-msvc@0.1.0:
-    resolution: {integrity: sha512-rKYGQ9TpPERC2UYhDIkv6y5ey3WPCphBLRFXPzexgGxoX2iyRFvw7EmMGlKxEnkqUE8/0oxIDZcdOHkjpbGG0A==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-win32-arm64-msvc/-/@libnare/mk-square-win32-arm64-msvc-0.1.0.tgz}
+  /@libnare/mk-square-win32-arm64-msvc@0.2.0:
+    resolution: {integrity: sha512-MigGAbvxA4jZfTebglwcAHHYToLv9ootOFjNRIw+kt8at+fxkuihXWkhJDUiASvbBwJuToEEBGmkgl5gw/Ok5Q==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-win32-arm64-msvc/-/@libnare/mk-square-win32-arm64-msvc-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -5563,8 +5563,8 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square-win32-x64-msvc@0.1.0:
-    resolution: {integrity: sha512-ot6jl2NXMYHjd+0u415LkwMFiqJQEjvkfaakQKp9MGyLz8QZOS3yRZ4CstvvTRE/FF1YDRHEnRSt7WuiyOxCTg==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-win32-x64-msvc/-/@libnare/mk-square-win32-x64-msvc-0.1.0.tgz}
+  /@libnare/mk-square-win32-x64-msvc@0.2.0:
+    resolution: {integrity: sha512-cN/6PIlfiPYAdJ2CZl4CJZSWg+MTiu0cDSthBs8zAh5cxG1WaUsN2boCV7L/pr7xGyIJSWh2n0qZW1F3755CIg==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square-win32-x64-msvc/-/@libnare/mk-square-win32-x64-msvc-0.2.0.tgz}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -5572,23 +5572,23 @@ packages:
     dev: false
     optional: true
 
-  /@libnare/mk-square@0.1.0:
-    resolution: {integrity: sha512-j5rkxXtL1lDUYh/JSZdoPdwtZAC22qUDnweTCrmLuf6kEQmF5y3hOkLQZXJY8luM5LD5ph/7RYjHIQoW4D8evw==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square/-/@libnare/mk-square-0.1.0.tgz}
+  /@libnare/mk-square@0.2.0:
+    resolution: {integrity: sha512-rM1ruzChyFCAAl57A5L4aXSkENYEE38MB2DQvBmdoF5mVj6sPaacxjphi9KWcOQkf5OIM+jcrEAaobtCxGoxZQ==, tarball: https://asia-npm.pkg.dev/libnare/mk-square/@libnare/mk-square/-/@libnare/mk-square-0.2.0.tgz}
     engines: {node: '>= 10'}
     optionalDependencies:
-      '@libnare/mk-square-android-arm-eabi': 0.1.0
-      '@libnare/mk-square-android-arm64': 0.1.0
-      '@libnare/mk-square-darwin-arm64': 0.1.0
-      '@libnare/mk-square-darwin-universal': 0.1.0
-      '@libnare/mk-square-darwin-x64': 0.1.0
-      '@libnare/mk-square-freebsd-x64': 0.1.0
-      '@libnare/mk-square-linux-arm-gnueabihf': 0.1.0
-      '@libnare/mk-square-linux-arm64-gnu': 0.1.0
-      '@libnare/mk-square-linux-arm64-musl': 0.1.0
-      '@libnare/mk-square-linux-x64-gnu': 0.1.0
-      '@libnare/mk-square-linux-x64-musl': 0.1.0
-      '@libnare/mk-square-win32-arm64-msvc': 0.1.0
-      '@libnare/mk-square-win32-x64-msvc': 0.1.0
+      '@libnare/mk-square-android-arm-eabi': 0.2.0
+      '@libnare/mk-square-android-arm64': 0.2.0
+      '@libnare/mk-square-darwin-arm64': 0.2.0
+      '@libnare/mk-square-darwin-universal': 0.2.0
+      '@libnare/mk-square-darwin-x64': 0.2.0
+      '@libnare/mk-square-freebsd-x64': 0.2.0
+      '@libnare/mk-square-linux-arm-gnueabihf': 0.2.0
+      '@libnare/mk-square-linux-arm64-gnu': 0.2.0
+      '@libnare/mk-square-linux-arm64-musl': 0.2.0
+      '@libnare/mk-square-linux-x64-gnu': 0.2.0
+      '@libnare/mk-square-linux-x64-musl': 0.2.0
+      '@libnare/mk-square-win32-arm64-msvc': 0.2.0
+      '@libnare/mk-square-win32-x64-msvc': 0.2.0
     dev: false
 
   /@lukeed/csprng@1.1.0:
@@ -13462,10 +13462,10 @@ packages:
     resolution: {integrity: sha512-XfBk1CxOOScDcMr9O1yKkNaQyy865NbYs+F7dr4H0LZMVgCj2Le59k6PqbNHoL5ToeaEQUYh6c6yMfVcc6SJxA==}
     engines: {node: '>=16'}
     dependencies:
-      '@sindresorhus/is': 5.3.0
+      '@sindresorhus/is': 5.4.1
       '@szmarczak/http-timer': 5.0.1
       cacheable-lookup: 7.0.0
-      cacheable-request: 10.2.8
+      cacheable-request: 10.2.12
       decompress-response: 6.0.0
       form-data-encoder: 2.1.4
       get-stream: 6.0.1
