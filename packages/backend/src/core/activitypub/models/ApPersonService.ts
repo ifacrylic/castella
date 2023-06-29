@@ -274,7 +274,7 @@ export class ApPersonService implements OnModuleInit {
 
 		const url = getOneApHrefNullable(person.url);
 
-		if (url && !checkHttps(url)) {
+		if (url && !checkHttps(url, process.env.NODE_ENV)) {
 			throw new Error('unexpected schema of person url: ' + url);
 		}
 
@@ -472,7 +472,7 @@ export class ApPersonService implements OnModuleInit {
 
 		const url = getOneApHrefNullable(person.url);
 
-		if (url && !checkHttps(url)) {
+		if (url && !checkHttps(url, process.env.NODE_ENV)) {
 			throw new Error('unexpected schema of person url: ' + url);
 		}
 

@@ -131,13 +131,13 @@ export class ApNoteService {
 	
 		this.logger.debug(`Note fetched: ${JSON.stringify(note, null, 2)}`);
 
-		if (note.id && !checkHttps(note.id)) {
+		if (note.id && !checkHttps(note.id, process.env.NODE_ENV)) {
 			throw new Error('unexpected shcema of note.id: ' + note.id);
 		}
 
 		const url = getOneApHrefNullable(note.url);
 
-		if (url && !checkHttps(url)) {
+		if (url && !checkHttps(url, process.env.NODE_ENV)) {
 			throw new Error('unexpected shcema of note url: ' + url);
 		}
 	

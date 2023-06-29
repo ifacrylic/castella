@@ -49,7 +49,7 @@ export class ApImageService {
 			throw new Error('invalid image: url not privided');
 		}
 
-		if (!checkHttps(image.url)) {
+		if (!checkHttps(image.url, process.env.NODE_ENV)) {
 			throw new Error('invalid image: unexpected schema of url: ' + image.url);
 		}
 
