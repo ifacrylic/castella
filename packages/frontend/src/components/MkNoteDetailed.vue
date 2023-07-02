@@ -636,7 +636,7 @@ if (appearNote.replyId) {
 	opacity: 0.7;
 
 	&:not(:last-child) {
-		margin-right: 28px;
+		margin-right: 20px;
 	}
 
 	&:hover {
