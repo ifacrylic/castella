@@ -30,7 +30,7 @@ $monospace-font: "JetBrains Mono", "Pretendard JP", Pretendard, Fira code, Fira 
 
 	--margin: var(--marginFull);
 	--minBottomSpacing: 0px;
-	
+
 	@media (max-width: 500px) {
 		--margin: var(--marginHalf);
 		--minBottomSpacing: calc(72px + max(12px, env(safe-area-inset-bottom, 0px)));
@@ -42,7 +42,7 @@ $monospace-font: "JetBrains Mono", "Pretendard JP", Pretendard, Fira code, Fira 
 ::selection {
 	color: var(--fgOnAccent);
 	background-color: var(--accent);
-} 
+}
 
 html {
 	background-color: var(--bg);
