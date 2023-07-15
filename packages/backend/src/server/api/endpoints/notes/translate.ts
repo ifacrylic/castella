@@ -85,7 +85,7 @@ export default class extends Endpoint<typeof meta, typeof paramDef> {
 			if (instance.translatorType == null || !translatorServices.includes(instance.translatorType)) {
 				throw new ApiError(meta.errors.noTranslateService);
 			}
-			
+
 			let targetLang = ps.targetLang;
 			if (targetLang.includes('-')) targetLang = targetLang.split('-')[0];
 
@@ -147,9 +147,8 @@ export default class extends Endpoint<typeof meta, typeof paramDef> {
 	private async apiCloudTranslationAdvanced(text: string, targetLang: string, saKey: string, projectId: string, location: string, model: string | null, glossary: string | null, provider: string) {
 		const [path, cleanup] = await createTemp();
 		fs.writeFileSync(path, saKey);
-		process.env.GOOGLE_APPLICATION_CREDENTIALS = path;
 
-		const translationClient = new TranslationServiceClient();
+		const translationClient = new TranslationServiceClient({ keyFilename: path });
 
 		const detectRequest = {
 			parent: `projects/${projectId}/locations/${location}`,
@@ -184,8 +183,8 @@ export default class extends Endpoint<typeof meta, typeof paramDef> {
 		const translatedText = translateResponse.translations && translateResponse.translations[0]?.translatedText;
 		const detectedLanguageCode = translateResponse.translations && translateResponse.translations[0]?.detectedLanguageCode;
 
-		delete process.env.GOOGLE_APPLICATION_CREDENTIALS;
 		cleanup();
+
 		return {
 			sourceLang: detectedLanguage !== null ? detectedLanguage : detectedLanguageCode,
 			text: translatedText,
