@@ -9,11 +9,11 @@ import type { DriveFile } from '@/models/entities/DriveFile.js';
 import type { Note } from '@/models/entities/Note.js';
 import { EmailService } from '@/core/EmailService.js';
 import { bindThis } from '@/decorators.js';
+import { SearchService } from '@/core/SearchService.js';
 import { UserEntityService } from '@/core/entities/UserEntityService.js';
 import { QueueLoggerService } from '../QueueLoggerService.js';
 import type * as Bull from 'bullmq';
 import type { DbUserDeleteJobData } from '../types.js';
-import { SearchService } from "@/core/SearchService.js";
 
 @Injectable()
 export class DeleteAccountProcessorService {
