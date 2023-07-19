@@ -99,6 +99,8 @@ export type Source = {
 		logName?: string;
 	}
 
+	apFileBaseUrl?: string;
+
 	mediaProxy?: string;
 	proxyRemoteFiles?: boolean;
 	videoThumbnailGenerator?: string;

@@ -344,8 +344,8 @@ export class ApPersonService implements OnModuleInit {
 
 		const avatarId = avatar?.id ?? null;
 		const bannerId = banner?.id ?? null;
-		const avatarUrl = avatar ? this.driveFileEntityService.getPublicUrl(avatar, 'avatar') : null;
-		const bannerUrl = banner ? this.driveFileEntityService.getPublicUrl(banner) : null;
+		const avatarUrl = avatar ? this.driveFileEntityService.getPublicUrl(avatar, 'avatar', true) : null;
+		const bannerUrl = banner ? this.driveFileEntityService.getPublicUrl(banner, undefined, true) : null;
 		const avatarBlurhash = avatar?.blurhash ?? null;
 		const bannerBlurhash = banner?.blurhash ?? null;
 
@@ -478,13 +478,13 @@ export class ApPersonService implements OnModuleInit {
 
 		if (avatar) {
 			updates.avatarId = avatar.id;
-			updates.avatarUrl = this.driveFileEntityService.getPublicUrl(avatar, 'avatar');
+			updates.avatarUrl = this.driveFileEntityService.getPublicUrl(avatar, 'avatar', true);
 			updates.avatarBlurhash = avatar.blurhash;
 		}
 
 		if (banner) {
 			updates.bannerId = banner.id;
-			updates.bannerUrl = this.driveFileEntityService.getPublicUrl(banner);
+			updates.bannerUrl = this.driveFileEntityService.getPublicUrl(banner, undefined, true);
 			updates.bannerBlurhash = banner.blurhash;
 		}
 
