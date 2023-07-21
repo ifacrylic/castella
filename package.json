@@ -1,6 +1,6 @@
 {
 	"name": "misskey",
-	"version": "13.14.0-beta.6",
+	"version": "13.14.1",
 	"prefix": "cs",
 	"codename": "nasubi",
 	"repository": {
@@ -12,7 +12,7 @@
 		"viewPath": "/tree/",
 		"commitHash": true
 	},
-	"packageManager": "pnpm@8.6.0",
+	"packageManager": "pnpm@8.6.9",
 	"workspaces": [
 		"packages/frontend",
 		"packages/backend",
