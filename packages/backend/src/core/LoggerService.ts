@@ -3,7 +3,9 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
+import { DI } from '@/di-symbols.js';
+import type { Config } from '@/config.js';
 import Logger from '@/logger.js';
 import { bindThis } from '@/decorators.js';
 import type { KEYWORD } from 'color-convert/conversions.js';
@@ -12,6 +14,8 @@ import type { KEYWORD } from 'color-convert/conversions.js';
 export class LoggerService {
 	private cloudLogging;
 	constructor(
+		@Inject(DI.config)
+		private config: Config,
 	) {
 		if (this.config.cloudLogging) {
 			this.cloudLogging = this.config.cloudLogging;
