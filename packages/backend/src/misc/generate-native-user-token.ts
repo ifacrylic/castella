@@ -5,4 +5,5 @@
 
 import { secureRndstr } from '@libnare/mk-square';
 
+// eslint-disable-next-line import/no-default-export
 export default () => secureRndstr(16);
