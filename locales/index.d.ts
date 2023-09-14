@@ -48,6 +48,7 @@ export interface Locale {
     "unpin": string;
     "copyContent": string;
     "copyLink": string;
+    "copyLinkRenote": string;
     "delete": string;
     "deleteAndEdit": string;
     "deleteAndEditConfirm": string;
@@ -419,6 +420,8 @@ export interface Locale {
     "totpDescription": string;
     "moderator": string;
     "moderation": string;
+    "moderationNote": string;
+    "addModerationNote": string;
     "nUsersMentioned": string;
     "securityKeyAndPasskey": string;
     "securityKey": string;
@@ -658,6 +661,7 @@ export interface Locale {
     "sample": string;
     "abuseReports": string;
     "reportAbuse": string;
+    "reportAbuseRenote": string;
     "reportAbuseOf": string;
     "fillAbuseReportDescription": string;
     "abuseReported": string;
@@ -1025,7 +1029,7 @@ export interface Locale {
     "enableChartsForFederatedInstances": string;
     "showTranslateButtonInNoteFooter": string;
     "showClipButtonInNoteFooter": string;
-    "largeNoteReactions": string;
+    "reactionsDisplaySize": string;
     "noteIdOrUrl": string;
     "video": string;
     "videos": string;
@@ -1107,6 +1111,7 @@ export interface Locale {
     "currentAnnouncements": string;
     "pastAnnouncements": string;
     "youHaveUnreadAnnouncements": string;
+    "useSecurityKey": string;
     "_announcement": {
         "forExistingUsers": string;
         "forExistingUsersDescription": string;
@@ -1465,6 +1470,10 @@ export interface Locale {
                 "description": string;
                 "flavor": string;
             };
+            "_smashTestNotificationButton": {
+                "title": string;
+                "description": string;
+            };
         };
     };
     "_role": {
@@ -1821,7 +1830,6 @@ export interface Locale {
         "securityKeyNotSupported": string;
         "registerTOTPBeforeKey": string;
         "securityKeyInfo": string;
-        "chromePasskeyNotSupported": string;
         "registerSecurityKey": string;
         "securityKeyName": string;
         "tapSecurityKey": string;
@@ -2131,6 +2139,10 @@ export interface Locale {
         "unreadAntennaNote": string;
         "emptyPushNotificationMessage": string;
         "achievementEarned": string;
+        "testNotification": string;
+        "checkNotificationBehavior": string;
+        "sendTestNotification": string;
+        "notificationWillBeDisplayedLikeThis": string;
         "_types": {
             "all": string;
             "follow": string;
@@ -2169,6 +2181,8 @@ export interface Locale {
         "introduction2": string;
         "widgetsIntroduction": string;
         "useSimpleUiForNonRootPages": string;
+        "usedAsMinWidthWhenFlexible": string;
+        "flexible": string;
         "_columns": {
             "main": string;
             "widgets": string;
