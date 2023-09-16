@@ -6,7 +6,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { checkHttps } from '@libnare/mk-square';
 import { DI } from '@/di-symbols.js';
-import type { DriveFilesRepository } from '@/models/index.js';
+import type { DriveFilesRepository } from '@/models/_.js';
 import type { MiRemoteUser } from '@/models/entities/User.js';
 import type { MiDriveFile } from '@/models/entities/DriveFile.js';
 import { MetaService } from '@/core/MetaService.js';

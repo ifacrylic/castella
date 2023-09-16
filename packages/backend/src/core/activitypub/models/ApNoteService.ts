@@ -8,7 +8,7 @@ import promiseLimit from 'promise-limit';
 import { In } from 'typeorm';
 import { checkHttps } from '@libnare/mk-square';
 import { DI } from '@/di-symbols.js';
-import type { PollsRepository, EmojisRepository } from '@/models/index.js';
+import type { PollsRepository, EmojisRepository } from '@/models/_.js';
 import type { Config } from '@/config.js';
 import type { MiRemoteUser } from '@/models/entities/User.js';
 import type { MiNote } from '@/models/entities/Note.js';

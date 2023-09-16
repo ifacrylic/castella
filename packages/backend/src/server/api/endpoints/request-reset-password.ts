@@ -7,7 +7,7 @@ import ms from 'ms';
 import { IsNull } from 'typeorm';
 import { Inject, Injectable } from '@nestjs/common';
 import { L_CHARS, secureRndstr } from '@libnare/mk-square';
-import type { PasswordResetRequestsRepository, UserProfilesRepository, UsersRepository } from '@/models/index.js';
+import type { PasswordResetRequestsRepository, UserProfilesRepository, UsersRepository } from '@/models/_.js';
 import { Endpoint } from '@/server/api/endpoint-base.js';
 import { IdService } from '@/core/IdService.js';
 import type { Config } from '@/config.js';

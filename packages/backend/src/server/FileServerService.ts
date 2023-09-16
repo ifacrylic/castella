@@ -12,7 +12,7 @@ import sharp from 'sharp';
 import { sharpBmp } from 'sharp-read-bmp';
 import { correctFilename } from '@libnare/mk-square';
 import type { Config } from '@/config.js';
-import type { MiDriveFile, DriveFilesRepository } from '@/models/index.js';
+import type { MiDriveFile, DriveFilesRepository } from '@/models/_.js';
 import { DI } from '@/di-symbols.js';
 import { createTemp } from '@/misc/create-temp.js';
 import { FILE_TYPE_BROWSERSAFE } from '@/const.js';

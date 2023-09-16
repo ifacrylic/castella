@@ -8,7 +8,7 @@ import ms from 'ms';
 import bcrypt from 'bcryptjs';
 import { L_CHARS, secureRndstr } from '@libnare/mk-square';
 import { Endpoint } from '@/server/api/endpoint-base.js';
-import type { UserProfilesRepository } from '@/models/index.js';
+import type { UserProfilesRepository } from '@/models/_.js';
 import { UserEntityService } from '@/core/entities/UserEntityService.js';
 import { EmailService } from '@/core/EmailService.js';
 import type { Config } from '@/config.js';

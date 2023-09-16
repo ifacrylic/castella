@@ -6,7 +6,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { secureRndstr } from '@libnare/mk-square';
 import { Endpoint } from '@/server/api/endpoint-base.js';
-import type { AccessTokensRepository } from '@/models/index.js';
+import type { AccessTokensRepository } from '@/models/_.js';
 import { IdService } from '@/core/IdService.js';
 import { DI } from '@/di-symbols.js';
 
