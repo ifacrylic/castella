@@ -91,9 +91,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 			</div>
 			<MkReactionsViewer :note="appearNote" :maxNumber="16">
 				<template #more>
-					<button class="_button" :class="$style.reactionDetailsButton" @click="showReactions">
-						{{ i18n.ts.more }}
-					</button>
+					<div :class="$style.reactionOmitted">{{ i18n.ts.more }}</div>
 				</template>
 			</MkReactionsViewer>
 			<footer :class="$style.footer">
@@ -479,7 +477,7 @@ function showRenoteMenu(viaKeyboard = false): void {
 	} else {
 		os.popupMenu([
 			getCopyNoteLinkMenu(note, i18n.ts.copyLinkRenote),
-			null, 
+			null,
 			getAbuseNoteMenu(note, i18n.ts.reportAbuseRenote),
 			$i.isModerator || $i.isAdmin ? getUnrenote() : undefined,
 		], renoteTime.value, {
@@ -509,12 +507,6 @@ function readPromo() {
 		noteId: appearNote.id,
 	});
 	isDeleted.value = true;
-}
-
-function showReactions(): void {
-	os.popup(defineAsyncComponent(() => import('@/components/MkReactedUsersDialog.vue')), {
-		noteId: appearNote.id,
-	}, {}, 'closed');
 }
 </script>
 
@@ -963,7 +955,7 @@ function showReactions(): void {
 	opacity: 0.7;
 }
 
-.reactionDetailsButton {
+.reactionOmitted {
 	display: inline-block;
 	height: 32px;
 	margin: 2px;
@@ -972,9 +964,5 @@ function showReactions(): void {
 	border-radius: 4px;
 	background: transparent;
 	opacity: .8;
-
-	&:hover {
-		background: var(--X5);
-	}
 }
 </style>
