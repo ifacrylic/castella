@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v4.0.0
+        uses: actions/checkout@v4.1.0
       - name: Get commit sha
         run: echo "COMMIT_SHA=$(git rev-parse --short=7 HEAD)" >> $GITHUB_ENV
       - name: Add SSH key

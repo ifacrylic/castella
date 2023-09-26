@@ -1102,6 +1102,8 @@ icon: "ไอคอน"
 forYou: "สำหรับคุณ"
 replies: "ตอบกลับ"
 renotes: "รีโน้ต"
+loadReplies: "แสดงการตอบกลับ"
+loadConversation: "แสดงบทสนทนา"
 _announcement:
   forExistingUsersDescription: "การประกาศนี้จะแสดงต่อผู้ใช้ที่มีอยู่ ณ จุดที่เผยแพร่นั้นๆถ้าหากเปิดใช้งาน ถ้าหากปิดใช้งานผู้ที่กำลังสมัครใหม่หลังจากโพสต์แล้วนั้นก็จะเห็นเช่นกัน"
   needConfirmationToReadDescription: "ข้อความแจ้งแยก ถ้าหากต้องการเพื่อยืนยันว่ากำลังทำเครื่องหมายประกาศนี้ว่าอ่านแล้วจะแสดงขึ้นถ้าหากเปิดใช้งาน การประกาศนั้นจะไม่รวมอยู่ในฟังก์ชั่นว่า \"ทำเครื่องหมายทั้งหมดว่าอ่านแล้ว\""
@@ -1382,6 +1384,8 @@ _achievements:
       title: "Brain Diver"
       description: "โพสต์ลิงก์ไปยัง Brain Diver"
       flavor: "Misskey-Misskey La-Tu-Ma"
+    _smashTestNotificationButton:
+      title: "ทดสอบโอเวอร์โฟลว์"
 _role:
   new: "บทบาทใหม่"
   edit: "แก้ไขบทบาท"
@@ -1505,6 +1509,7 @@ _plugin:
   install: "ติดตั้งปลั๊กอิน"
   installWarn: "กรุณาอย่าติดตั้งปลั๊กอินที่ไม่น่าเชื่อถือนะคะ"
   manage: "จัดการปลั๊กอิน"
+  viewSource: "ดูต้นฉบับ"
 _preferencesBackups:
   list: "สร้างการสำรองข้อมูล"
   saveNew: "บันทึกใหม่"
@@ -1692,7 +1697,6 @@ _timelineTutorial:
 _2fa:
   alreadyRegistered: "คุณได้ลงทะเบียนอุปกรณ์ยืนยันตัวตนแบบ 2 ชั้นแล้ว"
   registerTOTP: "ลงทะเบียนแอพตัวตรวจสอบสิทธิ์"
-  passwordToTOTP: "กรอกรหัสผ่าน"
   step1: "ขั้นตอนแรก ติดตั้งแอปยืนยันตัวตน (เช่น {a} หรือ {b}) บนอุปกรณ์ของคุณ"
   step2: "จากนั้นสแกนรหัส QR ที่แสดงบนหน้าจอนี้"
   step2Click: "การคลิกที่รหัส QR นี้จะช่วยให้คุณนั้นสามารถลงทะเบียน 2FA กับคีย์ความปลอดภัยหรือแอปตรวจสอบความถูกต้องของโทรศัพท์ได้"
@@ -1986,6 +1990,10 @@ _notification:
   unreadAntennaNote: "เสาอากาศ {name}"
   emptyPushNotificationMessage: "การแจ้งเตือนแบบพุชได้รับการอัพเดทแล้ว"
   achievementEarned: "รับความสำเร็จ"
+  testNotification: "ทดสอบการแจ้งเตือน"
+  checkNotificationBehavior: "ตรวจสอบลักษณะที่ปรากฏการแจ้งเตือน"
+  sendTestNotification: "ส่งทดสอบการแจ้งเตือน"
+  notificationWillBeDisplayedLikeThis: "การแจ้งเตือนมีลักษณะแบบนี้"
   _types:
     all: "ทั้งหมด"
     follow: "กำลังติดตาม"
@@ -2057,3 +2065,6 @@ _webhookSettings:
     renote: "รีโน้ตแล้วเมื่อ"
     reaction: "เมื่อได้รับรีแอคชั่น"
     mention: "เมื่อกำลังถูกกล่าวถึง"
+_moderationLogTypes:
+  suspend: "ถูกระงับ"
+  resetPassword: "รีเซ็ตรหัสผ่าน"
