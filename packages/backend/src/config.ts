@@ -162,6 +162,7 @@ export type Config = {
 	userAgent: string;
 	clientEntry: string;
 	clientManifestExists: boolean;
+	apFileBaseUrl: string | undefined;
 	mediaProxy: string;
 	externalMediaProxyEnabled: boolean;
 	videoThumbnailGenerator: string | null;
@@ -252,6 +253,7 @@ export function loadConfig(): Config {
 		inboxJobMaxAttempts: config.inboxJobMaxAttempts,
 		proxyRemoteFiles: config.proxyRemoteFiles,
 		signToActivityPubGet: config.signToActivityPubGet,
+		apFileBaseUrl: config.apFileBaseUrl,
 		mediaProxy: externalMediaProxy ?? internalMediaProxy,
 		externalMediaProxyEnabled: externalMediaProxy !== null && externalMediaProxy !== internalMediaProxy,
 		videoThumbnailGenerator: config.videoThumbnailGenerator ?
