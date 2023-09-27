@@ -40,7 +40,7 @@ export class RemoteUserResolveService {
 	}
 
 	@bindThis
-	public async resolveUser(username: string, host: string | undefined): Promise<MiLocalUser | MiRemoteUser> {
+	public async resolveUser(username: string, host: string | null): Promise<MiLocalUser | MiRemoteUser> {
 		const usernameLower = username.toLowerCase();
 
 		if (host == null) {

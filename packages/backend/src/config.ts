@@ -163,6 +163,11 @@ export type Config = {
 	userAgent: string;
 	clientEntry: string;
 	clientManifestExists: boolean;
+	cloudLogging?: {
+		projectId: string;
+		saKeyPath: string;
+		logName?: string;
+	}
 	apFileBaseUrl: string | undefined;
 	mediaProxy: string;
 	externalMediaProxyEnabled: boolean;
