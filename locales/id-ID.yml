@@ -1100,6 +1100,7 @@ currentAnnouncements: "Pengumuman Saat Ini"
 pastAnnouncements: "Pengumuman Terdahulu"
 replies: "Balas"
 renotes: "Renote"
+dateAndTime: "Tanggal dan Waktu"
 _initialAccountSetting:
   accountCreated: "Akun kamu telah sukses dibuat!"
   letsStartAccountSetup: "Untuk pemula, ayo atur profilmu dulu."
@@ -1651,8 +1652,6 @@ _sfx:
   note: "Catatan"
   noteMy: "Catatan (Saya)"
   notification: "Notifikasi"
-  chat: "Pesan"
-  chatBg: "Obrolan (Latar Belakang)"
   antenna: "Penerimaan Antenna"
   channel: "Notifikasi Kanal"
 _ago:
@@ -2044,3 +2043,4 @@ _webhookSettings:
 _moderationLogTypes:
   suspend: "Tangguhkan"
   resetPassword: "Atur ulang kata sandi"
+  createInvitation: "Buat kode undangan"
